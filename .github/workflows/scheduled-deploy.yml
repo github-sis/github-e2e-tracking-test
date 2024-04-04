@@ -2,7 +2,7 @@ name: Deploy to Production
 
 on:
   schedule:
-  - cron: '5-59/10 * * * *'
+  - cron: '*/10 * * * *'
 
 jobs:
   deploy:
