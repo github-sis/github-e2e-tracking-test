@@ -1,0 +1,15 @@
+name: Deploy to Production
+
+on:
+  schedule:
+  - cron: '*/15 * * * *'
+
+jobs:
+  deploy2:
+    name: Deploy
+    runs-on: ubuntu-latest
+    environment: production
+
+    steps:
+    - name: Deploy to production
+      run: echo 'Deploying to production...'
